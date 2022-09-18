@@ -16,7 +16,6 @@ import GameDetails from './components/GameDetails/GameDetails';
 function App() {
 
     const [games, setGames] = useState([]);
-    import { Routes, Route, useNavigate } from 'react-router-dom';
     const navigate = useNavigate();
     const addComment = (gameId, comment) => {
         setGames(state => {
@@ -40,7 +39,7 @@ function App() {
                 _id: uniqid(),
             },
         ]);
-        navigate('/catalog')
+        navigate('')
     };
 
     useEffect(() => {
